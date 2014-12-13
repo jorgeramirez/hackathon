@@ -56,6 +56,18 @@
                </li>
 
                 <li>{{#link-to "usuarios.dato" }}<i class="fa fa-female fa-male"></i><span>Mis Datos</span>{{/link-to}}</li>
+
+                
+                <li>{{#link-to "convocatorias"}}<i class="fa fa-gear"></i><span>Convocatorias</span>{{/link-to}}</li>
+                
+                {{#isAuthorized 'FE_menu_configuraciones'}}
+								<li class="sub-menu  dcjq-parent-li">
+                   <a href="javascript:;"  class="dcjq-parent" >
+                         <i class="fa fa-gear"></i>
+                         <span>Configuraciones</span>
+                   </a>
+               </li>
+               {{/isAuthorized}}
 								
             </ul>
             <!-- sidebar menu end-->

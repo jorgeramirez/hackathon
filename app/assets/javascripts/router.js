@@ -24,11 +24,11 @@ Bursa.Router.reopen({
 });
 
 Bursa.Router.map(function() {
-  this.resource("clientes", function() {
+  this.resource("convocatorias", function() {
     this.route('new');
-    this.resource("cliente", { path: "/:cliente_id" }, function() {
-        this.route('edit');
-        this.route('delete');
+    this.resource("convocatoria", { path: "/:convocatoria_id" }, function() {
+        this.route('consultar');
+        this.route('ver');
     });
   });
 
@@ -43,13 +43,6 @@ Bursa.Router.map(function() {
     });
   });
 
-  this.resource("sucursales", function() {
-    this.route('new');
-    this.resource("sucursal", { path: "/:sucursal_id" }, function() {
-        this.route('edit');
-        this.route('delete');
-    });
-  });
 
   this.resource('sessions', function() {
     this.route('new');
@@ -57,13 +50,4 @@ Bursa.Router.map(function() {
   });
 
   this.route("noEncontrado", { path: "*path"});
-  
-  this.resource("categoriaClientes", function() {
-    this.route('new');
-    this.resource("categoriaCliente", { path: "/:categoria_cliente_id" }, function() {
-        this.route('edit');
-        this.route('delete');
-    });
-  });
-
 });
