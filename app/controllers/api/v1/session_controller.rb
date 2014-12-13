@@ -11,10 +11,10 @@ class API::V1::SessionController < ApplicationController
         if check_only
           render json: {:username =>  params[:username], :nombre => user.nombre_completo, :permisos => permisos }, status: 201
         else
-          session = user.session_api_key(params[:sucursal])
+          session = user.session_api_key
 
           render json: {:access_token => session.access_token, :token_type => 'bearer', 
-            :username =>  params[:username], :nombre => user.nombre_completo, :sucursal => sucursal.descripcion, :permisos => permisos }, status: 201
+            :username =>  params[:username], :nombre => user.nombre_completo, :permisos => permisos }, status: 201
         end
       else
         if not verificarSucursal

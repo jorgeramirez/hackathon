@@ -25,8 +25,8 @@ class Usuario < ActiveRecord::Base
           "%#{value}%", "%#{value}%", "%#{value}%", "%#{value}%")
   }
 
-  def session_api_key(sucursal_id)
-    api_keys.active.sucursal(sucursal_id).session.first_or_create(sucursal_id: sucursal_id)
+  def session_api_key
+    api_keys.active.session.first_or_create
   end
 
   def nombre_completo
