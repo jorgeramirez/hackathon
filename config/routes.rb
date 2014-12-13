@@ -1,5 +1,7 @@
 Bursa::Application.routes.draw do
 
+  resources :convocatoria
+
   resources :personas
   #match '*path', :controller => 'application', :action => 'handle_options_request', via: :options
   resources :usuarios, :controller => "ember", :action => 'start'

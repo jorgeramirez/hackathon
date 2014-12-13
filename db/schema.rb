@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140521010922) do
+ActiveRecord::Schema.define(version: 20141213192604) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,19 @@ ActiveRecord::Schema.define(version: 20140521010922) do
   add_index "api_keys", ["access_token"], name: "index_api_keys_on_access_token", unique: true, using: :btree
   add_index "api_keys", ["sucursal_id"], name: "index_api_keys_on_sucursal_id", using: :btree
   add_index "api_keys", ["usuario_id"], name: "index_api_keys_on_usuario_id", using: :btree
+
+  create_table "convocatoria", force: true do |t|
+    t.string   "codigo"
+    t.string   "nombre_licitacion"
+    t.string   "convocante"
+    t.string   "tipo_contratacion"
+    t.string   "sistema_adjudicacion"
+    t.string   "forma_pago"
+    t.string   "apertura_competencia"
+    t.string   "estado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "recursos", force: true do |t|
     t.string   "codigo"

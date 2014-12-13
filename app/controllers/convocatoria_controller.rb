@@ -1,0 +1,2 @@
+class ConvocatoriaController < ApplicationController
+end

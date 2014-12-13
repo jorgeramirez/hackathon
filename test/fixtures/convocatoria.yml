@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  nombre_licitacion: MyString
+  convocante: MyString
+  tipo_contratacion: MyString
+  sistema_adjudicacion: MyString
+  forma_pago: MyString
+  apertura_competencia: MyString
+  estado: MyString
+
+two:
+  codigo: MyString
+  nombre_licitacion: MyString
+  convocante: MyString
+  tipo_contratacion: MyString
+  sistema_adjudicacion: MyString
+  forma_pago: MyString
+  apertura_competencia: MyString
+  estado: MyString
