@@ -1,0 +1,45 @@
+<h3>
+  <i class="fa fa-angle-right"></i>
+  Usuarios
+  {{#link-to 'usuarios.new'}}
+    <button class="btn btn-theme btn-sm glyphicon glyphicon-plus" style="margin-top: -5px; margin-left: 5px;"></button>
+  {{/link-to}}
+</h3>
+<div class="row mt">
+  <div class="col-lg-12">
+    {{view Bursa.views.FilterView}}
+    <div class="content-panel table-responsive" style="padding: 0px;">
+      <table class="table table-bordered table-striped table-condensed">
+          <thead>
+              <tr>
+                  <th>Nombre de Usuario</th>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Email</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody>
+          {{#each}}
+              <tr>
+                  <td>{{username}}</td>
+                  <td>{{nombre}}</td>
+                  <td>{{apellido}}</td>
+                  <td>{{email}}</td>
+                  <td class="center">
+                    {{#link-to 'usuario.edit' this classNames='table-action'}}
+                      <button class="btn btn-theme btn-sm glyphicon glyphicon-pencil"></button>
+                    {{/link-to}}
+                    {{#link-to 'usuario.delete' this classNames='table-action'}}
+                      <button class="btn btn-theme btn-sm glyphicon glyphicon-remove" 
+                              data-toggle="modal" data-target="#usuarioDelete"></button>
+                    {{/link-to}}
+                  </td>
+              </tr>
+          {{/each}}
+          </tbody>
+      </table>
+    </div>
+    {{view Bursa.views.PaginationView}}
+  </div>
+</div>

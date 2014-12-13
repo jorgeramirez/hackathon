@@ -1,0 +1,19 @@
+<div class="row">
+  <form role="search">
+    <div class="col-lg-4 col-lg-offset-8">
+      <div class="input-group search-form">
+          {{input type="text" class="form-control codium-filter-input" placeholder="Buscar..." value=searchValue autofocus="autofocus"}}
+          <span class="input-group-btn">
+            <button type="submit" class="fa fa-search btn btn-theme" {{action "doSearch" searchValue}}></button>
+            {{#if hasSearchForm}}
+            <button data-toggle="modal" {{bind-attr data-target=searchFormModal}} {{action "noop"}} class="btn btn-theme btn-filter-action">Filtros <i class="fa fa-filter"></i></button>
+            {{/if}}
+            <button class="btn btn-theme btn-filter-action" {{action "clearFilters"}}><i class="fa fa-times"></i></button>
+          </span>
+      </div>
+    </div>
+  </form>
+  {{#if hasSearchForm}}
+    {{partial searchFormTpl}}
+  {{/if}}
+</div>

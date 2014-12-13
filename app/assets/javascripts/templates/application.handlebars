@@ -1,0 +1,100 @@
+<section id="container" {{bind-attr class="isNotAuthenticated:sidebar-closed"}}>
+    <!-- **********************************************************************************************************************************************************
+    TOP BAR CONTENT & NOTIFICATIONS
+    *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg" id="header-container">
+        <div class="sidebar-toggle-box">
+            {{#if session.isAuthenticated}}
+                <div {{bind-attr class=":fa :fa-bars :tooltips isNotAuthenticated:hidden"}} data-placement="right" data-original-title=""></div>
+            {{/if}}
+           
+        </div>
+        <!--logo start-->
+        {{#link-to "index" class="logo"}}
+        <b>Hacka<span>thon</span></b>
+        {{/link-to}}
+        <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+            {{#if session.isAuthenticated}}
+                <li><a class="logout" id="logout" {{action 'invalidateSession'}}><i class="fa fa-key"></i> Cerrar Sesi&oacute;n</a></li>
+            {{/if}}
+        </ul>
+        </div>
+    </header>
+    <!--header end-->
+    
+    <!-- **********************************************************************************************************************************************************
+    MAIN SIDEBAR MENU
+    *********************************************************************************************************************************************************** -->
+    {{#if session.isAuthenticated}}
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar"  class="nav-collapse" >
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+            
+                <li>
+                  <div class="centered">
+                        <i class="fa fa-user fa-2x"></i>
+                        <h5 class="centered">{{session.nombre}}</h5>
+
+                        <p class="centered"><i class="fa fa-chevron-right"></i> <small>{{session.username}}</small></p>
+                      {{!--<p class="centered"><i class="fa fa-home"></i> <small>{{session.sucursal}}</small></p>--}}
+                  </div>
+                </li>
+							  {{#isAuthorized 'FE_menu_personas'}}
+								<li class="sub-menu  dcjq-parent-li">
+                   <a href="javascript:;"  class="dcjq-parent" >
+                         <i class="fa fa-female fa-male"></i>
+                         <span>Personas</span>
+                   </a>
+                   <ul class="sub" style="overflow: hidden; display: block;">
+										 {{#isAuthorized 'FE_index_usuarios'}}
+                     	<li>{{#link-to "usuarios"}}<span>Usuarios</span>{{/link-to}}</li>
+                		 {{/isAuthorized}}
+                   </ul>
+               </li>
+                {{/isAuthorized}}
+
+			          {{#isAuthorized 'FE_menu_configuraciones'}}
+								<li class="sub-menu  dcjq-parent-li">
+                   <a href="javascript:;"  class="dcjq-parent" >
+                         <i class="fa fa-gear"></i>
+                         <span>Configuraciones</span>
+                   </a>
+               </li>
+               {{/isAuthorized}}
+								
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+    {{/if}}
+    
+    <!-- **********************************************************************************************************************************************************
+    MAIN CONTENT
+    *********************************************************************************************************************************************************** -->
+    <div id="main-content-container" {{bind-attr style=containerHeightStyle}}>
+        <!--main content start-->
+        <section id="main-content" {{bind-attr class="isNotAuthenticated:ember-view"}}>
+            <section class="wrapper" id="wrapperid">
+              {{outlet}}
+              {{outlet modal}}
+            </section>
+        </section>
+        <!--main content end-->
+    </div>
+{{#if session.isAuthenticated}}
+        <!--footer start-->
+    <div id="footer-container">   
+        <footer class="site-footer" style="position:relative; bottom:0%; z-index: -9999;">
+            <div class="text-right">
+                2014 - <a href="http://www.codium.com.py/">codium.com.py</a><span style="padding-right: 10px;"></span>
+            </div>
+        </footer>
+        <!--footer end-->
+    </div>
+{{/if}}
+</section>

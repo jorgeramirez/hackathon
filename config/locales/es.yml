@@ -1,0 +1,26 @@
+es:
+  activerecord:
+    errors:
+      messages:
+        blank: "Este campo es obligatorio."
+        invalid_email: "El correo electrónico ingresado no es válido."
+        invalid_phone_number: "El teléfono ingresado no es válido."
+        ruc_taken: "El ruc ya existe."
+        codigo_barra_taken: "El código de barra ya existe."
+        nro_factura_taken: "En número de factura ya existe."
+        greater_than_or_equal_to: "El valor del atributo debe ser mayor o igual a 0."
+        record_invalid: "El registro no es válido"
+        unselected_element: "Debe seleccionar un elemento"
+        mismo_tipo_producto: "El tipo de producto debe ser distinto"
+        cantidad_required: "Debe especificar la cantidad para el pack"
+        descripcion_taken: "Ya existe un registro con la misma descripción"
+        
+      models:
+        producto_deposito:
+          attributes:
+            existencia:
+              greater_than_or_equal_to: "La existencia debe ser mayor o igual a 0."
+        usuario:
+          attributes:
+            username:
+              taken: "El nombre de usuario ya existe."

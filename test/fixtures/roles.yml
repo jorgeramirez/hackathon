@@ -1,0 +1,16 @@
+Administrador:
+  codigo: administrador
+  descripcion: Administrador del sistema.
+  recursos: FE_menu_personas, FE_menu_configuraciones, FE_index_clientes, FE_show_clientes, FE_post_clientes, FE_put_clientes, FE_delete_clientes, BE_index_clientes, BE_show_clientes, BE_post_clientes, BE_put_clientes, BE_delete_clientes, FE_post_sucursales, FE_put_sucursales, FE_delete_sucursales, BE_index_sucursales, BE_show_sucursales, BE_post_sucursales, BE_put_sucursales, BE_delete_sucursales, FE_index_usuarios, FE_show_usuarios, FE_post_usuarios, FE_put_usuarios, FE_delete_usuarios, BE_index_usuarios, BE_show_usuarios, BE_post_usuarios, BE_put_usuarios, BE_delete_usuarios, FE_index_categoria_clientes, BE_index_categoria_clientes, FE_index_solicitudes, FE_show_solicitudes, FE_post_solicitudes, FE_put_solicitudes, FE_delete_solicitudes, FE_aprobar_solicitudes, BE_index_solicitudes, BE_show_solicitudes, BE_post_solicitudes, BE_put_solicitudes, BE_delete_solicitudes, BE_aprobar_solicitudes
+Vendedor:
+  codigo: vendedor
+  descripcion: Vendedor o encargado de sucursal.
+  recursos: FE_menu_personas, FE_menu_configuraciones, FE_index_clientes, FE_show_clientes, FE_post_clientes, FE_put_clientes, FE_delete_clientes, BE_index_clientes, BE_show_clientes, BE_post_clientes, BE_put_clientes, BE_delete_clientes, FE_post_sucursales, FE_put_sucursales, FE_delete_sucursales, BE_index_sucursales, BE_show_sucursales, BE_post_sucursales, BE_put_sucursales, BE_delete_sucursales, FE_index_usuarios, FE_show_usuarios, FE_post_usuarios, FE_put_usuarios, FE_delete_usuarios, BE_index_usuarios, BE_show_usuarios, BE_post_usuarios, BE_put_usuarios, BE_delete_usuarios, FE_index_categoria_clientes, BE_index_categoria_clientes
+Contador:
+  codigo: contador
+  descripcion: Contador de la empresa
+  recursos: FE_menu_personas, FE_menu_configuraciones, FE_index_clientes, FE_show_clientes, FE_post_clientes, FE_put_clientes, FE_delete_clientes, BE_index_clientes, BE_show_clientes, BE_post_clientes, BE_put_clientes, BE_delete_clientes, FE_post_sucursales, FE_put_sucursales, FE_delete_sucursales, BE_index_sucursales, BE_show_sucursales, BE_post_sucursales, BE_put_sucursales, BE_delete_sucursales, FE_index_usuarios, FE_show_usuarios, FE_post_usuarios, FE_put_usuarios, FE_delete_usuarios, BE_index_usuarios, BE_show_usuarios, BE_post_usuarios, BE_put_usuarios, BE_delete_usuarios, FE_index_categoria_clientes, BE_index_categoria_clientes
+Depositero:
+  codigo: depositero
+  descripcion: Encargado de depositos
+  recursos: FE_menu_personas, FE_menu_configuraciones, FE_index_clientes, FE_show_clientes, FE_post_clientes, FE_put_clientes, FE_delete_clientes, BE_index_clientes, BE_show_clientes, BE_post_clientes, BE_put_clientes, BE_delete_clientes, FE_post_sucursales, FE_put_sucursales, FE_delete_sucursales, BE_index_sucursales, BE_show_sucursales, BE_post_sucursales, BE_put_sucursales, BE_delete_sucursales, FE_index_usuarios, FE_show_usuarios, FE_post_usuarios, FE_put_usuarios, FE_delete_usuarios, BE_index_usuarios, BE_show_usuarios, BE_post_usuarios, BE_put_usuarios, BE_delete_usuarios, FE_index_categoria_clientes, BE_index_categoria_clientes

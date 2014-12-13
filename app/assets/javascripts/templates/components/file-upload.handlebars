@@ -1,0 +1,51 @@
+<!-- Files template. -->
+
+
+<div id="global-dropzone" {{bind-attr class="showGlobalDropZone:visible"}}>
+  <h2>Suelte la imagen en el cuadro</h2>
+</div>
+
+{{#each uploadFile in model}}
+<div class="well">
+  <div class="upload-file-block">
+    <div class="image-preview">
+      {{#if uploadFile.isDisplayableImage}}
+        <img class="image-preview" {{bind-attr src=uploadFile.base64Image}} />
+      {{else}}
+        <img class="image-preview" src="/images/missing_small.png">
+      {{/if}}
+    </div>
+    
+    <div class="details-block">
+      <label>Nombre:</label> {{uploadFile.name}}<br>
+      <label>Tamaño:</label> {{uploadFile.size}}<br>
+      
+      {{#if uploadFile.didUpload}}
+        <span class="has-success">
+          <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+          <span class="form-control-feedback">Subido con éxito</span>
+          <a {{action "removeFile" uploadFile}}>Limpiar</a>
+          
+        </span>
+      {{else}}
+        {{#if idRecurso}}
+          <a {{action "uploadFile" uploadFile idRecurso}}>Subir</a>
+        {{/if}}
+        <a {{action "removeFile" uploadFile}} class="remove-from-list">Descartar</a>
+      {{/if}}
+      
+      {{#if uploadFile.showProgressBar}}
+        <div class="progress progress-striped">
+          <div class="progress-bar progress-bar-info" {{bind-attr style="uploadFile.progressStyle"}}></div>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</div>
+{{/each}}
+<div id="dropzone" {{bind-attr class=":well showDropZone:visible"}}>
+  <h4 class="msg-drop">Arrastre la imagen aquí o haga clic dentro del cuadro</h4>
+</div>
+<div class="hide" >
+  {{view Bursa.UploadButtonView groupBinding="model"}}  
+</div>

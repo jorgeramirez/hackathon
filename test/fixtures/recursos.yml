@@ -1,0 +1,30 @@
+BE_index_usuarios:
+  codigo: BE_index_usuarios
+  descripcion: BE_index_usuarios
+BE_show_usuarios:
+  codigo: BE_show_usuarios
+  descripcion: BE_show_usuarios
+BE_post_usuarios:
+  codigo: BE_post_usuarios
+  descripcion: BE_post_usuarios
+BE_put_usuarios:
+  codigo: BE_put_usuarios
+  descripcion: BE_put_usuarios
+BE_delete_usuarios:
+  codigo: BE_delete_usuarios
+  descripcion: BE_delete_usuarios
+FE_index_usuarios:
+  codigo: FE_index_usuarios
+  descripcion: FE_index_usuarios
+FE_show_usuarios:
+  codigo: FE_show_usuarios
+  descripcion: FE_show_usuarios
+FE_post_usuarios:
+  codigo: FE_post_usuarios
+  descripcion: FE_post_usuarios
+FE_put_usuarios:
+  codigo: FE_put_usuarios
+  descripcion: FE_put_usuarios
+FE_delete_usuarios:
+  codigo: FE_delete_usuarios
+  descripcion: FE_delete_usuarios 

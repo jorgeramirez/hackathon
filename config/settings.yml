@@ -1,0 +1,41 @@
+ejemplos:
+  size: 2
+  computed: <%= 1 + 2 + 3 %>
+  section:
+    size: 3
+    servers: [ {name: yahoo.com}, {name: amazon.com} ]
+
+valores_por_defecto:
+  cliente:
+    ruc_sin_nombre: '0'
+
+autenticacion:
+  logueo_con_sucursal: false
+
+venta:
+  nro_factura_autogenerado: true
+  cantidad_detalles: 10
+
+cajas:
+  generar_movimientos: true
+  operaciones:
+    transferencia_entrada: TransferenciaEntrada
+    transferencia_salida: TransferenciaSalida
+    credito: Credito
+    debito: Debito
+    apertura_caja: AperturaCaja
+    cierre_caja: CierreCaja
+    credito_venta: CreditoVenta
+    debito_venta: DebitoVenta
+    debito_compra: DebitoCompra
+
+printers:
+  printers: [[nancy, EPSON_LX_350], [librada, EPSON_LX_350], [interno, EPSON_LX_350]]
+  codigo_interno: interno
+
+control_inventario:
+  cantidad_productos: 2
+  setear_existencia: true
+
+promociones:
+  a_partir_de: true

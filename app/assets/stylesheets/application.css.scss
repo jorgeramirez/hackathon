@@ -1,0 +1,504 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require datepicker-bootstrap3
+ *= require ../../../vendor/assets/stylesheets/theme
+ *= require normalize
+ *= require_self
+ *= require_tree .
+ */
+
+/* search-input */
+
+.search-input-width .twitter-typeahead, .tt-dropdown-menu {
+  width: 100%;
+}
+
+.tt-suggestion.tt-cursor, .tt-suggestion.tt-cursor:hover {
+  background: none;
+  background-color: #4ECDC4;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* detalles */
+.form-detalles > .form-group > .col-xs-1, 
+.form-detalles > .form-group > .col-sm-1, 
+.form-detalles > .form-group > .col-md-1,
+.form-detalles > .form-group > .col-lg-1,
+.form-detalles > .form-group > .col-xs-2, 
+.form-detalles > .form-group > .col-sm-2,
+.form-detalles > .form-group > .col-md-2, 
+.form-detalles > .form-group > .col-lg-2, 
+.form-detalles > .form-group > .col-xs-3, 
+.form-detalles > .form-group > .col-sm-3, 
+.form-detalles > .form-group > .col-md-3, 
+.form-detalles > .form-group > .col-lg-3, 
+.form-detalles > .form-group > .col-xs-4, 
+.form-detalles > .form-group > .col-sm-4, 
+.form-detalles > .form-group > .col-md-4, 
+.form-detalles > .form-group > .col-lg-4, 
+.form-detalles > .form-group > .col-xs-5, 
+.form-detalles > .form-group > .col-sm-5, 
+.form-detalles > .form-group > .col-md-5, 
+.form-detalles > .form-group > .col-lg-5, 
+.form-detalles > .form-group > .col-xs-6, 
+.form-detalles > .form-group > .col-sm-6, 
+.form-detalles > .form-group > .col-md-6, 
+.form-detalles > .form-group > .col-lg-6, 
+.form-detalles > .form-group > .col-xs-7, 
+.form-detalles > .form-group > .col-sm-7, 
+.form-detalles > .form-group > .col-md-7, 
+.form-detalles > .form-group > .col-lg-7, 
+.form-detalles > .form-group > .col-xs-8, 
+.form-detalles > .form-group > .col-sm-8, 
+.form-detalles > .form-group > .col-md-8, 
+.form-detalles > .form-group > .col-lg-8, 
+.form-detalles > .form-group > .col-xs-9, 
+.form-detalles > .form-group > .col-sm-9, 
+.form-detalles > .form-group > .col-md-9, 
+.form-detalles > .form-group > .col-lg-9, 
+.form-detalles > .form-group > .col-xs-10, 
+.form-detalles > .form-group > .col-sm-10, 
+.form-detalles > .form-group > .col-md-10, 
+.form-detalles > .form-group > .col-lg-10, 
+.form-detalles > .form-group > .col-xs-11, 
+.form-detalles > .form-group > .col-sm-11, 
+.form-detalles > .form-group > .col-md-11, 
+.form-detalles > .form-group > .col-lg-11, 
+.form-detalles > .form-group > .col-xs-12, 
+.form-detalles > .form-group > .col-sm-12, 
+.form-detalles > .form-group > .col-md-12, 
+.form-detalles > .form-group > .col-lg-12 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.form-detalles > .form-group > .first-cell {
+  padding-left: 15px !important;
+}
+
+.form-detalles > .form-group > .last-cell {
+  padding-right: 15px !important;
+}
+
+/* CUSTOM CONFIGURATIONS */
+.form-horizontal-panel {
+    background: #ffffff;
+    margin: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 3px 2px #aab2bd;
+    text-align: left;
+}
+
+.form-horizontal .has-feedback .form-control-feedback{
+    text-align: left;
+    top: 25px;
+    right: 0px;
+}
+
+/* ---- */
+
+/* errores para el tag-input */
+.has-error .bootstrap-tagsinput {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  margin-bottom: 0px;
+  width: 100% !important;
+}
+
+.form-horizontal .has-feedback .form-control-feedback.form-control-feedback-adjusted {
+  
+}
+/* ---- */
+
+.form-control {
+  padding: 6px 10px;
+}
+
+
+body > .ember-view, #main-content{
+    height: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.tag.label {
+  font-size: 95%;
+}
+
+.taginputsimple .bootstrap-tagsinput {
+  width: inherit;
+}
+
+.tt-input {
+  vertical-align: middle !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.help-block-promo {
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.right {
+    float: right;
+    margin-right: 5px;
+}
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+}
+
+.black-bg {
+    background: #22242a;
+    border-bottom: 1px solid #393d46;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+    min-height: 60px;
+}
+
+a.logo {
+    font-size: 20px;
+    color: #f2f2f2;
+    float: left;
+    margin-top: 15px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+a.logo b {
+    font-weight: 900;
+}
+
+a.logo span {
+    color: #4ECDC4;
+}
+
+a.logo:hover, a.logo:focus {
+    text-decoration: none;
+    outline: none;
+    color: #f2f2f2;
+}
+
+.table-action {
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+
+/* pagination view */
+ul.pager {
+    float: right;
+    margin: 0;
+}
+
+.pager-info {
+    float: left;
+    margin: 0;
+}
+
+/* search view */
+.search-form {
+    padding-left: 0;
+    margin-bottom: 3px;
+}
+
+/* tag-widget view */
+.bootstrap-tagsinput {
+    width: 100%;
+}
+
+.geppii-searchinput {
+    display: block !important;
+}
+
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-hint {
+  margin-bottom: 0;
+}
+
+.twitter-typeahead .tt-hint
+{
+    display: none;
+}
+
+.twitter-typeahead .hint-small
+{
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    line-height: 1.5;
+}
+
+.twitter-typeahead .hint-large
+{
+    height: 45px;
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+    line-height: 1.33;
+}
+
+.tt-dropdown-menu {
+  min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px;
+
+  &:hover, &:focus {
+  
+      color: #fff;
+      background-color: #0081c2;
+      background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+      background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+      background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+      background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+  
+  }
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: #fff;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+}
+
+.tt-suggestion.tt-is-under-cursor a {
+  color: #fff;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  /* dejar solo la llave en el botón de logout*/
+  #logout {
+    font-size: 0;
+
+    i {
+        font-size: 12px;
+    }
+  }
+}
+
+/*bugfix cuando el picker se usa en un modal window cuyo z-index es 1050 y del picker por defecto es 1000*/
+.datepicker.dropdown-menu {
+  z-index: 1070 !important; 
+}
+
+/*estilo de botones de la seccion de filtrado*/
+.btn-filter-action {
+  margin-left:5px; 
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.modal-dialog.login-venta{
+  width: 300px;
+};
+
+
+/* file upload */
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a.active, a.active:hover {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+#global-dropzone { 
+    background: none repeat scroll 0 0 #424242; 
+    height: 0px; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 10001; 
+    opacity: 0; 
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition:  opacity 0.2s ease-in-out;
+    -o-transition:  opacity 0.2s ease-in-out;
+    transition:  opacity 0.2s ease-in-out; 
+}
+
+#global-dropzone.visible { 
+    height: 100%; 
+    opacity: 0.8; 
+}
+
+#dropzone { 
+  display: none; 
+}
+
+#dropzone.visible { 
+    display: block; 
+    opacity: 0.8; 
+}
+
+#global-dropzone h2 { 
+    display: block; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    margin: -82px 0 0 -283px; 
+    color: #fff; 
+    line-height: 50px; 
+    font-size: 45pt; 
+    z-index: -1; 
+    text-shadow: 3px 3px 4px #000; 
+    font-weight: 700;
+}
+
+.msg-drop {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.msg-drop.extra {
+    margin-top: 130px;
+}
+
+.upload-file-block {
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.upload-file-block a {
+  cursor: pointer;
+}
+
+.image-preview {
+  width: 128px; 
+  margin-right: 10px; 
+  display: inline-block;
+}
+
+.image-preview img {
+  max-width: 120px;
+  max-height: 120px;
+  background: #999;
+  padding: 4px;
+}
+
+.image-preview-form {
+  max-width: 242px;
+  height: 242px;
+  max-height: 242px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 10px 10px 10px 10px;
+}
+
+.float-right {
+  float: right;
+}
+
+.details-block {
+    vertical-align: top; 
+    display: inline-block;
+}
+
+.details-block input {
+    width: 320px;
+}
+
+.remove-from-list {
+    float: right;
+}
+
+.progress {
+    margin-top: 5px;
+}
+
+.btn-remove-completed {
+    margin-left: 5px;
+}
+
+.total-size {
+    margin-left: 114px;
+}
