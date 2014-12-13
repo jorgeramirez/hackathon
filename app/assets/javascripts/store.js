@@ -54,6 +54,18 @@ Bursa.UsuarioSerializer = Bursa.ApplicationSerializer.extend(DS.EmbeddedRecordsM
   }
 });
 
+Bursa.ConvocatoriaSerializer = Bursa.ApplicationSerializer.extend(DS.EmbeddedRecordsMixin, 
+  { 
+  typeForRoot: function(root) {
+    var camelized = Ember.String.camelize(root);
+    if (camelized === 'convocatoria') {
+      return camelized;
+    } else {
+      return inflector.singularize(camelized);
+    }
+  }
+});
+
 
 Bursa.CategoriaClienteSerializer = Bursa.ApplicationSerializer.extend(DS.EmbeddedRecordsMixin, 
   { attrs: 

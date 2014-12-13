@@ -53,9 +53,11 @@
                      	<li>{{#link-to "usuarios"}}<span>Usuarios</span>{{/link-to}}</li>
                 		 {{/isAuthorized}}
                    </ul>
-               </li>
-
-			          {{#isAuthorized 'FE_menu_configuraciones'}}
+                </li>
+                
+                <li>{{#link-to "convocatorias"}}<i class="fa fa-gear"></i><span>Convocatorias</span>{{/link-to}}</li>
+                
+                {{#isAuthorized 'FE_menu_configuraciones'}}
 								<li class="sub-menu  dcjq-parent-li">
                    <a href="javascript:;"  class="dcjq-parent" >
                          <i class="fa fa-gear"></i>

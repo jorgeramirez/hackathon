@@ -5,6 +5,7 @@ Bursa::Application.routes.draw do
   resources :personas
   #match '*path', :controller => 'application', :action => 'handle_options_request', via: :options
   resources :usuarios, :controller => "ember", :action => 'start'
+  resources :convocatorias, :controller => "ember", :action => 'start'
   resources :apiKeys, :controller => "ember", :action => 'start'
   resources :recursosRoles, :controller => "ember", :action => 'start'
   resources :rolesUsuarios, :controller => "ember", :action => 'start'
@@ -24,6 +25,7 @@ Bursa::Application.routes.draw do
   namespace :api, :defaults => {:format => :json} do
     namespace :v1 do
       resources :usuarios
+      resources :convocatorias
       resources :api_keys
       resources :roles
       resources :roles_usuarios
