@@ -36,6 +36,7 @@ Bursa.Router.map(function() {
   
   this.resource("usuarios", function() {
     this.route('new');
+    this.route('dato');
     this.resource("usuario", { path: "/:usuario_id" }, function() {
         this.route('edit');
         this.route('delete');
@@ -52,6 +53,7 @@ Bursa.Router.map(function() {
 
   this.resource('sessions', function() {
     this.route('new');
+    this.route('newuser');
   });
 
   this.route("noEncontrado", { path: "*path"});

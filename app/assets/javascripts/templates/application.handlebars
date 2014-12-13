@@ -46,7 +46,7 @@
 								<li class="sub-menu  dcjq-parent-li">
                    <a href="javascript:;"  class="dcjq-parent" >
                          <i class="fa fa-female fa-male"></i>
-                         <span>Personas</span>
+                         <span>Mis Datos</span>
                    </a>
                    <ul class="sub" style="overflow: hidden; display: block;">
 										 {{#isAuthorized 'FE_index_usuarios'}}
@@ -55,14 +55,7 @@
                    </ul>
                </li>
 
-			          {{#isAuthorized 'FE_menu_configuraciones'}}
-								<li class="sub-menu  dcjq-parent-li">
-                   <a href="javascript:;"  class="dcjq-parent" >
-                         <i class="fa fa-gear"></i>
-                         <span>Configuraciones</span>
-                   </a>
-               </li>
-               {{/isAuthorized}}
+                <li>{{#link-to "usuarios.dato" }}<i class="fa fa-female fa-male"></i><span>Mis Datos</span>{{/link-to}}</li>
 								
             </ul>
             <!-- sidebar menu end-->
@@ -89,7 +82,7 @@
     <div id="footer-container">   
         <footer class="site-footer" style="position:relative; bottom:0%; z-index: -9999;">
             <div class="text-right">
-                2014 - <a href="http://www.codium.com.py/">codium.com.py</a><span style="padding-right: 10px;"></span>
+                2014 - <a href="http://www.innovando.gov.py/">innovando.gov.py</a><span style="padding-right: 10px;"></span>
             </div>
         </footer>
         <!--footer end-->

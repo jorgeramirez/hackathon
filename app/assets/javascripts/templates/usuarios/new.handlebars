@@ -8,19 +8,27 @@
       <div class="form-horizontal">
           <form class="style-form" role="form" {{action "save" on="submit"}} onkeydown="Bursa.keydownFormHandler('controller:usuarios.new', 'save');">
             <div class="form-group">
-              <div class="col-lg-6"  {{bind-attr class="errors.nombre:has-error errors.nombre:has-feedback"}}>
-                <label class="form-label"  for="nombre">Nombre</label>
+              <div class="col-lg-4"  {{bind-attr class="errors.nombre:has-error errors.nombre:has-feedback"}}>
+                <label class="form-label"  for="nombre">Nombre de la Empresa/Proveedor</label>
                 {{focus-input  type="text" value=nombre class="form-control" placeholder="Nombre" autofocus="autofocus"}}
                 <span class="help-block">{{error errors.nombre}}</span>
                 {{#if errors.nombre}}
                 <span class="glyphicon glyphicon-remove form-control-feedback"></span>
                 {{/if}}
               </div>
-              <div class="col-lg-6" {{bind-attr class="errors.apellido:has-error errors.apellido:has-feedback"}}>
-                <label class="form-label"  for="apellido">Apellido</label>
-                {{input type="text" value=apellido class="form-control" placeholder="Apellido"}}
-                <span class="help-block">{{error errors.apellido}}</span>
-                {{#if errors.apellido}}
+              <div class="col-lg-4" {{bind-attr class="errors.direccion:has-error errors.direccion:has-feedback"}}>
+                <label class="form-label"  for="direccion">Dirección</label>
+                {{input type="text" value=direccion class="form-control" placeholder="Dirección"}}
+                <span class="help-block">{{error errors.direccion}}</span>
+                {{#if errors.direccion}}
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                {{/if}}
+              </div>
+              <div class="col-lg-4" {{bind-attr class="errors.telefono:has-error errors.telefono:has-feedback"}}>
+                <label class="form-label"  for="telefono">Teléfono</label>
+                {{input type="text" value=telefono class="form-control" placeholder="Teléfono"}}
+                <span class="help-block">{{error errors.telefono}}</span>
+                {{#if errors.telefono}}
                 <span class="glyphicon glyphicon-remove form-control-feedback"></span>
                 {{/if}}
               </div>
