@@ -10,3 +10,4 @@ require 'active_record/fixtures'
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "usuarios")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "recursos")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "roles")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "convocatorias")
