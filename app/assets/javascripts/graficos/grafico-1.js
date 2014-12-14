@@ -13,7 +13,7 @@ var depths = ['Todos', 'nivel_entidad', 'entidad', 'uoc', 'tipo'];
 
 var tipoBar;
 
-function graficar(data1, data2, tipo) {
+function graficar2(tipo) {
   tipoBar = tipo;
 
   data1 = '[{"nivel_entidad":"MUNICIPALIDADES","cantidad":3,"tipo":"UEP","entidad":"MUNICIPALIDAD DE GRAL JOSE M. BRUGUEZ","uoc":"GRAL JOSE M. BRUGUEZ"},{"nivel_entidad":"PODER EJECUTIVO","cantidad":6,"tipo":"SUOC","entidad":"MINISTERIO DE SALUD PUBLICA Y BIENESTAR SOCIAL","uoc":"DIRECCION GENERAL DE SALUD AMBIENTAL-(DIGESA)"},{"nivel_entidad":"ENTIDADES PÚBLICAS DE SEGURIDAD SOCIAL","cantidad":7,"tipo":"UOC","entidad":"INSTITUTO DE PREVISIÓN SOCIAL","uoc":"UOC IPS"},{"nivel_entidad":"PODER EJECUTIVO","cantidad":3,"tipo":"UEP","entidad":"MINISTERIO DE HACIENDA","uoc":"APOYO AL DESARROLLO DE UN SISTEMA DE ADQ. PUBLICAS"},{"nivel_entidad":"UNIVERSIDADES NACIONALES","cantidad":4,"tipo":"UOC","entidad":"UNIVERSIDAD NACIONAL DE ASUNCIÓN","uoc":"RECTORADO"},{"nivel_entidad":"UNIVERSIDADES NACIONALES","cantidad":5,"tipo":"UEP","entidad":"UNIVERSIDAD NACIONAL DE CONCEPCIÓN","uoc":"RECTORADO"},{"nivel_entidad":"GOBIERNOS DEPARTAMENTALES","cantidad":6,"tipo":"UOC","entidad":"GOBIERNO DEPARTAMENTAL DE PRESIDENTE HAYES","uoc":"UOC PRESIDENTE HAYES"},{"nivel_entidad":"PODER JUDICIAL","cantidad":3,"tipo":"SUOC","entidad":"CORTE SUPREMA DE JUSTICIA","uoc":"ENCARNACION"}]'
@@ -23,7 +23,7 @@ function graficar(data1, data2, tipo) {
   if (data1 && data2) {
     
     
-    $('#grafico').show();
+    $('#grafico2').show();
   
     json = JSON.parse(data1);
     $("#col1").empty();
