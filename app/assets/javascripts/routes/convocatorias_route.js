@@ -40,6 +40,12 @@ Bursa.ConvocatoriaVerRoute = Bursa.AuthenticatedRoute.extend({
   model: function(params) {
     return this.modelFor('convocatoria');
   },
+  
+  setupController: function(controller, model) {
+    controller.set('model', model);
+    controller.set('metodosSeleccion', ['Basada en Costo', 'Basada en Calidad y Costo']);
+    controller.set('estadosConvocatoria', ['Publicada', 'Desierta', 'Cancelada', 'Adjudicada']);
+  },
 
   renderTemplate: function() {
     this.render('convocatorias.ver', {
