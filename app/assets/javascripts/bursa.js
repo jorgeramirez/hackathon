@@ -9,3 +9,7 @@
 //= require_tree ./templates
 //= require ./router
 //= require_tree ./routes
+//= require ./graficos/morris-0.4.3.min.js
+//= require ./graficos/morris-conf.js
+
+

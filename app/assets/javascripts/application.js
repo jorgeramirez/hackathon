@@ -26,6 +26,7 @@
 //= require bootstrap-tagsinput
 //= require ember
 //= require ember-data
+//= require raphael-min.js
 //= require ember-simple-auth
 //= require ember-simple-auth-oauth2
 //= require_tree ./templates

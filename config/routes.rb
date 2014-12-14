@@ -35,6 +35,8 @@ Bursa::Application.routes.draw do
   resources :roles, :controller => "ember", :action => 'start'
 
   get "/sessions/new" => "ember#start"
+  get "/sessions/newuser" => "ember#start"
+  get "/proveedores/producto" => "ember#start"
   get "ember/start"
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -72,7 +72,18 @@
                    </ul>
                </li>
 
-              <li>{{#link-to "convocatorias"}}<i class="fa fa-sort-amount-desc"></i><span>Ranking</span>{{/link-to}}</li>
+               <li class="sub-menu  dcjq-parent-li">
+                   <a href="javascript:;"  class="dcjq-parent" >
+                         <i class="fa fa-sort-amount-desc"></i>
+                         <span>Ranking de Proveedores</span>
+                   </a>
+                   <ul class="sub" style="overflow: hidden; display: block;">
+                     <li>{{#link-to "proveedores.producto"}}<span>Por Producto</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Por Invitación</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Por Cantidad de Ofertas</span>{{/link-to}}</li>
+                   
+                   </ul>
+               </li>
 
               <li>{{#link-to "convocatorias"}}<i class="fa fa-bar-chart-o"></i><span>Informes</span>{{/link-to}}</li>
                 

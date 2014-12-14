@@ -1,0 +1,12 @@
+Bursa.ProveedoresProductoRoute = Bursa.AuthenticatedRoute.extend({
+  model: function() {
+    var session = this.get('session');
+    console.log(session);
+    return this.store.find('usuario', {page: 1});
+  },
+  
+  setupController: function(controller, model) {
+    controller.set('model', model);
+    controller.set('currentPage', 1);
+  }
+});
