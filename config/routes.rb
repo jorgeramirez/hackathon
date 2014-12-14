@@ -40,6 +40,7 @@ Bursa::Application.routes.draw do
   get "/sessions/newuser" => "ember#start"
   get "/proveedores/producto" => "ember#start"
   get "/proveedores/estado" => "ember#start"
+  get "/convocatorias/:id/ver" => "ember#start"
   get "ember/start"
 
   # The priority is based upon order of creation: first created -> highest priority.
