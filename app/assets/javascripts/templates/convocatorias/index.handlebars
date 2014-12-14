@@ -1,0 +1,51 @@
+<h3>
+  <i class="fa fa-angle-right"></i>
+  Convocatorias
+  <!--{{#link-to 'convocatorias.new'}}
+    <button class="btn btn-theme btn-sm glyphicon glyphicon-plus" style="margin-top: -5px; margin-left: 5px;"></button>
+    {{/link-to}}-->
+</h3>
+<div class="row mt">
+  <div class="col-lg-12">
+    {{view Bursa.views.FilterView}}
+    <div class="content-panel table-responsive" style="padding: 0px;">
+      <table class="table table-bordered table-striped table-condensed">
+          <thead>
+              <tr>
+                  <th>C&oacute;digo</th>
+                  <th>Nombre</th>
+                  <th>Convocante</th>
+                  <th>Tipo de Contrataci&oacute;n</th>
+                  <th>Sistema de Adjudicaci&oacute;n</th>
+                  <th>Forma de Pago</th>
+                  <th>Apertura Competencia</th>
+                  <th>Estado</th>
+              </tr>
+          </thead>
+          <tbody>
+          {{#each}}
+              <tr>
+                  <td>{{codigo}}</td>
+                  <td>{{nombreLicitacion}}</td>
+                  <td>{{convocante}}</td>
+                  <td>{{tipoContratacion}}</td>
+                  <td>{{sistemaAdjudicacion}}</td>
+                  <td>{{formaPago}}</td>
+                  <td>{{aperturaCompetencia}}</td>
+                  <td>{{estado}}</td>
+                  <td class="center">
+                    {{#link-to 'convocatoria.consultar' this classNames='table-action'}}
+                      <button class="btn btn-theme btn-sm glyphicon glyphicon-envelope"></button>
+                    {{/link-to}}
+                    {{#link-to 'convocatoria.ver' this classNames='table-action'}}
+                      <button class="btn btn-theme btn-sm glyphicon glyphicon-eye-open"></button>
+                    {{/link-to}}
+                  </td>
+              </tr>
+          {{/each}}
+          </tbody>
+      </table>
+    </div>
+    {{view Bursa.views.PaginationView}}
+  </div>
+</div>

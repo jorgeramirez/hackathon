@@ -1,8 +1,34 @@
 Bursa::Application.routes.draw do
 
+  resources :item_lote_adjudicados
+
+  resources :adjudicacion_lotes
+
+  resources :adjudicacion_proveedors
+
+  resources :adjudicaciones
+
+  resources :invitados
+
+  resources :convocatoria_lote_items
+
+  resources :convocatoria_lotes
+
+  resources :pacs
+
+  resources :items
+
+  resources :categorias
+
+  resources :tipo_operaciones
+
+  resources :convocatoria
+
   resources :personas
+  resources :items
   #match '*path', :controller => 'application', :action => 'handle_options_request', via: :options
   resources :usuarios, :controller => "ember", :action => 'start'
+  resources :convocatorias, :controller => "ember", :action => 'start'
   resources :apiKeys, :controller => "ember", :action => 'start'
   resources :recursosRoles, :controller => "ember", :action => 'start'
   resources :rolesUsuarios, :controller => "ember", :action => 'start'
@@ -10,6 +36,9 @@ Bursa::Application.routes.draw do
   resources :roles, :controller => "ember", :action => 'start'
 
   get "/sessions/new" => "ember#start"
+  get "/llamados" => "ember#start"
+  get "/sessions/newuser" => "ember#start"
+  get "/proveedores/producto" => "ember#start"
   get "ember/start"
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -22,9 +51,11 @@ Bursa::Application.routes.draw do
   namespace :api, :defaults => {:format => :json} do
     namespace :v1 do
       resources :usuarios
+      resources :convocatorias
       resources :api_keys
       resources :roles
       resources :roles_usuarios
+      resources :items
       post 'session' => 'session#create'
     end
   end

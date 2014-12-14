@@ -1,0 +1,2 @@
+module ItemLoteAdjudicadosHelper
+end

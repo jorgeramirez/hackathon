@@ -14,3 +14,17 @@ Bursa.SessionsNewRoute = Ember.Route.extend({
     controller.set('model', model);
   }
 });
+
+Bursa.SessionsNewuserRoute = Ember.Route.extend({
+  model: function() {
+    var record = this.store.createRecord('usuario');
+    console.log(record);
+    return record;
+  },
+
+  setupController: function(controller, model) {
+    controller.set('model', model);
+    controller.set('nuevoUsuario', true);
+    controller.set('changePass', true)
+  }
+});

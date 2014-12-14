@@ -16,7 +16,7 @@ Bursa.IndexRoute = Ember.Route.extend(Bursa.AuthenticatedRouteMixin, {
         previousTransition.retry();
         console.log(previousTransition);
       } else {
-        var nextPage = 'usuarios';
+        var nextPage = 'convocatorias';
         return this.transitionTo(nextPage).then(function() {
             location.reload();
         });

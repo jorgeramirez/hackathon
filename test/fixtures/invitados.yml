@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  convocatoria_id: 
+  razon_social: MyString
+  ruc: MyString
+  telefono: MyString
+  email: MyString
+
+two:
+  convocatoria_id: 
+  razon_social: MyString
+  ruc: MyString
+  telefono: MyString
+  email: MyString

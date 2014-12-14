@@ -1,0 +1,50 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+3CV:
+  codigo: 3CV
+  descripcion: Selección sobre la base la comparación de las calificaciones - 3CV
+
+AN:
+  codigo: AN
+  descripcion: Acuerdo Nacional
+
+CD:
+  codigo: CD
+  descripcion: Contratación Directa
+
+CO:
+  codigo: CO
+  descripcion: Concurso de Ofertas
+
+LPI:
+  codigo: LPI
+  descripcion: Licitación Pública Internacional
+
+LPN:
+  codigo: LPN
+  descripcion: Licitación Pública Nacional
+
+CE:
+  codigo: CE
+  descripcion: Contratación por Excepción
+
+LC:
+  codigo: LC
+  descripcion: Locación de Inmuebles (Alquileres)
+
+SCB:
+  codigo: SCB
+  descripcion: Selección basada en la calidad – SBC
+
+SCBC:
+  codigo: SCBC
+  descripcion: Selección basada en la calidad y el costo – SBCC
+
+SBMC:
+  codigo: SBMC
+  descripcion: Selección basada en el menor costo – SBMC
+
+SCC:
+  codigo: SCC
+  descripcion: Selección basada en las calificaciones de consultores – SCC
+

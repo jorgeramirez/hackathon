@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  convocatoria_lote_id: 
+  unidad_medida: MyString
+  numero: MyString
+  producto_codigo: MyString
+  producto_descripcion: MyString
+  item_id: 
+  descripcion: MyString
+  cantidad: 1
+
+two:
+  convocatoria_lote_id: 
+  unidad_medida: MyString
+  numero: MyString
+  producto_codigo: MyString
+  producto_descripcion: MyString
+  item_id: 
+  descripcion: MyString
+  cantidad: 1

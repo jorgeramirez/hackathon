@@ -46,7 +46,7 @@
 								<li class="sub-menu  dcjq-parent-li">
                    <a href="javascript:;"  class="dcjq-parent" >
                          <i class="fa fa-female fa-male"></i>
-                         <span>Personas</span>
+                         <span>Mis Datos</span>
                    </a>
                    <ul class="sub" style="overflow: hidden; display: block;">
 										 {{#isAuthorized 'FE_index_usuarios'}}
@@ -54,15 +54,56 @@
                 		 {{/isAuthorized}}
                    </ul>
                </li>
-
-			          {{#isAuthorized 'FE_menu_configuraciones'}}
-								<li class="sub-menu  dcjq-parent-li">
+            
+               <li class="sub-menu  dcjq-parent-li">
                    <a href="javascript:;"  class="dcjq-parent" >
                          <i class="fa fa-gear"></i>
-                         <span>Configuraciones</span>
+                         <span>Convocatorias</span>
                    </a>
+                   <ul class="sub" style="overflow: hidden; display: block;">
+                     <li>{{#link-to "convocatorias"}}<span>Mis Llamados</span>{{/link-to}}</li>
+                     <li>{{#link-to "llamados"}}<span>Todas los Llamados</span>{{/link-to}}</li>
+                     
+                   </ul>
                </li>
-               {{/isAuthorized}}
+
+               <li class="sub-menu  dcjq-parent-li">
+                   <a href="javascript:;"  class="dcjq-parent" >
+                         <i class="fa fa-sort-amount-desc"></i>
+                         <span>Ranking de Proveedores</span>
+                   </a>
+                   <ul class="sub" style="overflow: hidden; display: block;">
+                     <li>{{#link-to "proveedores.producto"}}<span>Por Producto</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Por Invitación</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Por Cantidad de Ofertas</span>{{/link-to}}</li>
+                   
+                   </ul>
+               </li>
+
+                <li class="sub-menu  dcjq-parent-li">
+                   <a href="javascript:;"  class="dcjq-parent" >
+                         <i class="fa fa-signal"></i>
+                         <span>Estadísticas de Precios</span>
+                   </a>
+                   <ul class="sub" style="overflow: hidden; display: block;">
+                     <li>{{#link-to "convocatorias"}}<span>Inversiones por categorías</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Fluctuación de precios</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Planificado vs Adjudicado</span>{{/link-to}}</li>
+                   </ul>
+               </li>
+
+               
+                 <li class="sub-menu  dcjq-parent-li">
+                   <a href="javascript:;"  class="dcjq-parent" >
+                         <i class="fa fa-bar-chart-o"></i>
+                         <span>Informes para Proveedores</span>
+                   </a>
+                   <ul class="sub" style="overflow: hidden; display: block;">
+                     <li>{{#link-to "proveedores.producto"}}<span>Precios anteriores</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Sugerencia de precios</span>{{/link-to}}</li>
+                      <li>{{#link-to "convocatorias"}}<span>Oferentes Aliados</span>{{/link-to}}</li>
+                   </ul>
+               </li>
 								
             </ul>
             <!-- sidebar menu end-->
@@ -84,15 +125,15 @@
         </section>
         <!--main content end-->
     </div>
-{{#if session.isAuthenticated}}
+{{!-- {{#if session.isAuthenticated}}
         <!--footer start-->
     <div id="footer-container">   
         <footer class="site-footer" style="position:relative; bottom:0%; z-index: -9999;">
             <div class="text-right">
-                2014 - <a href="http://www.codium.com.py/">codium.com.py</a><span style="padding-right: 10px;"></span>
+                2014 - <a href="http://www.innovando.gov.py/">innovando.gov.py</a><span style="padding-right: 10px;"></span>
             </div>
         </footer>
         <!--footer end-->
     </div>
-{{/if}}
+{{/if}} --}}
 </section>

@@ -3,5 +3,25 @@ administrador:
   nombre: Administrador User
   username: administrador
   email: administrador@example.com
+  telefono: 021777888
+  direccion: Marco Riera 1033
+  password_digest: "$2a$10$wJTPdvpGgzDvkXChrcPyqOQrFFawzGu89B1rZze/lVIcJKWiNeAqS" # 'secret'
+  roles: Administrador
+
+producteev:
+  nombre: Producteev
+  username: producteev
+  email: info@producteev.com
+  telefono: 021777888
+  direccion: Marco Riera 1033
+  password_digest: "$2a$10$wJTPdvpGgzDvkXChrcPyqOQrFFawzGu89B1rZze/lVIcJKWiNeAqS" # 'secret'
+  roles: Administrador
+
+ccomercial:
+  nombre: CC Comercial
+  username: ccomercial
+  email: info@ccomercial.com
+  telefono: 021777888
+  direccion: Marco Riera 1033
   password_digest: "$2a$10$wJTPdvpGgzDvkXChrcPyqOQrFFawzGu89B1rZze/lVIcJKWiNeAqS" # 'secret'
   roles: Administrador

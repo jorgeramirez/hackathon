@@ -1,0 +1,97 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+1:
+  codigo: 1
+  descripcion: Pasajes y Transportes
+
+2:
+  codigo: 2
+  descripcion: Servicios de Limpiezas, Mantenimientos y reparaciones menores y mayores de Instalaciones, Maquinarias y Vehículos
+
+3:
+  codigo: 3
+  descripcion: Adquisición y Locación de inmuebles. Alquiler de muebles
+
+4:
+  codigo: 4
+  descripcion: Capacitaciones y Adiestramientos
+
+5:
+  codigo: 5
+  descripcion: Consultorías, Asesorías e Investigaciones. Estudios y Proyectos de inversión
+
+6:
+  codigo: 6
+  descripcion: Seguros
+
+7:
+  codigo: 7
+  descripcion: Servicios Técnicos
+
+8:
+  codigo: 8
+  descripcion: Publicidad y Propaganda
+
+9:
+  codigo: 9
+  descripcion: Servicios de ceremonial, gastronómico y funerarios
+
+10:
+  codigo: 10
+  descripcion: Textiles, vestuarios y calzados
+
+11:
+  codigo: 11
+  descripcion: Útiles de oficina, Productos de papel y cartón e impresos
+
+12:
+  codigo: 12
+  descripcion: Utensilios de cocina y comedor, Productos de Porcelana, vidrio y loza
+
+13:
+  codigo: 13
+  descripcion: Productos Alimenticios
+
+14:
+  codigo: 14
+  descripcion: Combustibles y Lubricantes
+
+15:
+  codigo: 15
+  descripcion: Productos químicos
+
+16:
+  codigo: 16
+  descripcion: Equipos, Productos e instrumentales Médicos y de Laboratorio. Servicios asistenciales de salud
+
+17:
+  codigo: 17
+  descripcion: Materiales e insumos eléctricos, metálicos y no metálicos, Plásticos, cauchos. Repuestos, herramientas, cámaras y cubiertas.
+
+18:
+  codigo: 18
+  descripcion: Bienes e insumos agropecuario y forestal
+
+19:
+  codigo: 19
+  descripcion: Minerales
+
+20:
+  codigo: 20
+  descripcion: Construcción, Restauración, Reconstrucción o Remodelación y Reparación de Inmuebles
+
+22:
+  codigo: 21
+  descripcion: Maquinarias, Equipos y herramientas mayores - Equipos de transporte
+
+23:
+  codigo: 23
+  descripcion: Muebles y Enseres
+
+24:
+  codigo: 24
+  descripcion: Equipos, accesorios y programas computacionales, de oficina, educativos, de imprenta, de comunicación y señalamiento
+
+25:
+  codigo: 25
+  descripcion: Equipos Militares y de Seguridad. Servicio de Seguridad y Vigilancia

@@ -1,0 +1,75 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  estado: Publicado (A Ejecutar)
+  categoria_id: 
+  tipo_operacion_id: 
+  tipo_garantia_oferta: MyString
+  sistema_adjudicacion: Por el Total
+  forma_pago: MyString
+  moneda: MyString
+  planificacion_id: MyString
+  id_llamado: MyString
+  nombre_licitacion: REPARACION DE MODULOS DE EQUIPOS DE CONMUTACION CENTRALES EWSD
+  convocante: MUNICIPALIDAD DE GRAL JOSE M. BRUGUEZ
+  metodo_seleccion: CONCURSO DE OFERTAS
+  fecha_publicacion: MyString
+  fuente_financiamiento: MyString
+  plazo_entrega_adquisición: MyString
+  lugar_entrega_adquisicion: MyString
+  vigencia_contrato: MyString
+  nombre_contacto: MyString
+  cargo_contacto: MyString
+  telefono_contacto: MyString
+  email_contacto: MyString
+  fecha_junta_aclaracion: MyString
+  lugar_junta_aclaracion: MyString
+  lugar_consulta: MyString
+  fecha_tope_consulta: MyString
+  fecha_tope_respuesta: MyString
+  lugar_entrega_oferta: MyString
+  fecha_entrega_oferta: MyString
+  lugar_apertura_oferta: MyString
+  fecha_apertura_oferta: 14/01/2015
+  fecha_inicio_propuesta: MyString
+  fecha_cierre_propuesta: MyString
+  fecha_etapa_competitiva: MyString
+  observaciones: MyString
+  restricciones: MyString
+
+two:
+  estado: MyString
+  categoria_id: 
+  tipo_operacion_id: 
+  tipo_garantia_oferta: MyString
+  sistema_adjudicacion: MyString
+  forma_pago: MyString
+  moneda: MyString
+  planificacion_id: MyString
+  id_llamado: MyString
+  nombre_licitacion: MyString
+  convocante: MyString
+  metodo_seleccion: MyString
+  fecha_publicacion: MyString
+  fuente_financiamiento: MyString
+  plazo_entrega_adquisición: MyString
+  lugar_entrega_adquisicion: MyString
+  vigencia_contrato: MyString
+  nombre_contacto: MyString
+  cargo_contacto: MyString
+  telefono_contacto: MyString
+  email_contacto: MyString
+  fecha_junta_aclaracion: MyString
+  lugar_junta_aclaracion: MyString
+  lugar_consulta: MyString
+  fecha_tope_consulta: MyString
+  fecha_tope_respuesta: MyString
+  lugar_entrega_oferta: MyString
+  fecha_entrega_oferta: MyString
+  lugar_apertura_oferta: MyString
+  fecha_apertura_oferta: MyString
+  fecha_inicio_propuesta: MyString
+  fecha_cierre_propuesta: MyString
+  fecha_etapa_competitiva: MyString
+  observaciones: MyString
+  restricciones: MyString

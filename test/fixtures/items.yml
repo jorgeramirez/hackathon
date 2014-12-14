@@ -1,0 +1,86 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+47121602-001:
+  producto_codigo: 47121602-001
+  producto_descripcion: Aspiradora
+  precio_minimo: 780000
+  precio_maximo: 1500000
+  precio_promedio: 950000
+
+52141601-002:
+  producto_codigo: 52141601-002
+  producto_descripcion: Lavadora Automática
+  precio_minimo: 500000
+  precio_maximo: 750000
+  precio_promedio: 625000
+
+
+47121805-001:
+  producto_codigo: 47121805-001
+  producto_descripcion: Hidrolavadora
+  precio_minimo: 500000
+  precio_maximo: 750000
+  precio_promedio: 625000
+
+24111503-002:
+  producto_codigo: 24111503-002
+  producto_descripcion: Bolsa de Polipropileno grande
+  precio_minimo: 540
+  precio_maximo: 700
+  precio_promedio: 620
+
+47131803-002:
+  producto_codigo: 47131803-002
+  producto_descripcion: Desinfectante liquido
+  precio_minimo: 12500
+  precio_maximo: 16000
+  precio_promedio: 13200
+
+47131830-001:
+  producto_codigo: 47131830-001
+  producto_descripcion: Lustra muebles
+  precio_minimo: 12500
+  precio_maximo: 28000
+  precio_promedio: 21000
+
+47131829-002:
+  producto_codigo: 47131829-002
+  producto_descripcion: Desinfectante para baño
+  precio_minimo: 10500
+  precio_maximo: 13200
+  precio_promedio: 12000
+
+47131816-003:
+  producto_codigo: 47131816-003
+  producto_descripcion: Desodorante de ambiente liquido
+  precio_minimo: 5700
+  precio_maximo: 8000
+  precio_promedio: 6500
+
+53131608-001:
+  producto_codigo: 53131608-001
+  producto_descripcion: Jabon de tocador en pan
+  precio_minimo: 850
+  precio_maximo: 1200
+  precio_promedio: 950
+
+47131824-001:
+  producto_codigo: 47131824-001
+  producto_descripcion: Limpia vidrio con atomizador
+  precio_minimo: 12500
+  precio_maximo: 19000
+  precio_promedio: 14000
+
+47131816-001:
+  producto_codigo: 47131816-001
+  producto_descripcion: Desodorante de ambiente en aerosol 
+  precio_minimo: 8000
+  precio_maximo: 16000
+  precio_promedio: 12000
+
+47131615-001:
+  producto_codigo: 47131615-001
+  producto_descripcion: Escoba de cepillo
+  precio_minimo: 12500
+  precio_maximo: 18000
+  precio_promedio: 13500

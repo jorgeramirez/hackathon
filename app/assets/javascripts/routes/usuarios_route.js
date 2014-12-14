@@ -1,5 +1,7 @@
 Bursa.UsuariosIndexRoute = Bursa.AuthenticatedRoute.extend({
   model: function() {
+    var session = this.get('session');
+    console.log(session);
     return this.store.find('usuario', {page: 1});
   },
   
@@ -27,7 +29,23 @@ Bursa.UsuariosNewRoute = Bursa.AuthenticatedRoute.extend({
 
 Bursa.UsuarioEditRoute = Bursa.AuthenticatedRoute.extend({
   model: function(params) {
+    console.log(params);
     return this.modelFor('usuario');
+  },
+
+  renderTemplate: function() {
+    this.render('usuarios.new', {
+      controller: 'usuarioEdit'
+    });
+  }
+
+});
+
+Bursa.UsuarioDatoRoute = Bursa.AuthenticatedRoute.extend({
+  model: function(params) {
+    var sessions = this.get('sessions');
+    console.log("----------llamada a usuarios datos");
+    return this.store.find('usuario', {page: 1});
   },
 
   renderTemplate: function() {

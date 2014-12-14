@@ -1,0 +1,54 @@
+<div class="modal fade" id="llamadoSearchForm">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" {{action "noop"}}  data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Filtros</h4>
+      </div>
+      <div class="modal-body">
+          <div class="form-horizontal">
+            <form class="style-form" role="form">
+              <div class="form-group">
+                <div class="col-lg-6">
+                    <label class="form-label"  for="categoria">Categoría</label>
+                    {{focus-input type="text" class="form-control" placeholder="Categoría"}}
+                </div>
+                <div class="col-lg-6">
+                    <label class="form-label"  for="entidad">Entidad</label>
+                    {{input type="text" class="form-control" placeholder="Entidad"}}
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-6">
+                    <label class="form-label"  for="modalidad">Modalidad</label>
+                    {{view Ember.Select 
+                     content=modalidades
+                     selection=modalidad
+                     value=modalidad
+                     classNames="form-control"}}
+                </div>
+                <div class="col-lg-6">
+                    <label class="form-label"  for="nro_factura">ID o Nombre del Llamado</label>
+                    {{input type="text" class="form-control" placeholder="ID o Nombre del Llamado"}}
+                </div>
+              </div>
+              <label class="form-label" for="fecha">Fecha de Apertura</label>    
+              <div class="form-group">
+                <div class="col-md-6">
+                  {{view Bursa.views.DatePickerView value=fechaDesde nullable=true placeholder="Desde" }}
+                </div>
+                <div class="col-md-6">
+                  {{view Bursa.views.DatePickerView value=fechaHasta nullable=true placeholder="Hasta"}}
+                </div>
+              </div>
+            </form>
+          </div>     
+      </div>
+      <div class="modal-footer">
+        <button type="button" {{action "criteriaSearch"}} class="btn btn-theme codium-search-btn" data-dismiss="modal" autofocus>Buscar</button>
+        <button type="button" {{action "clearFilters"}} class="btn btn-default" data-dismiss="modal">Limpiar Filtros</button>
+        <button type="button" {{action "noop"}} class="btn btn-default codium-cancel-btn" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>

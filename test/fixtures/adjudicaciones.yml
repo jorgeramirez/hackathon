@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pac_id: 
+  convocatoria_id: 
+  categoria_id: 
+  tipo_operacion_id: 
+
+two:
+  pac_id: 
+  convocatoria_id: 
+  categoria_id: 
+  tipo_operacion_id: 
