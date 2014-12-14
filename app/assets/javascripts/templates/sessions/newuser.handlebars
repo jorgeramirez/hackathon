@@ -9,7 +9,7 @@
                 <div class="form-group">
                   <div class="col-lg-2"  {{bind-attr class="errors.nombre:has-error errors.nombre:has-feedback"}}>
                     <label class="form-label"  for="nombre">RUC</label>
-                    {{focus-input  type="text" value=nombre class="form-control" placeholder="RUC" autofocus="autofocus"}}
+                    {{focus-input  type="text" value=ruc class="form-control" placeholder="RUC" autofocus="autofocus"}}
                     <span class="help-block">{{error errors.nombre}}</span>
                     {{#if errors.nombre}}
                     <span class="glyphicon glyphicon-remove form-control-feedback"></span>
