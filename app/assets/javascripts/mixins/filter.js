@@ -1,4 +1,4 @@
-/*global Bursa, Ember, $ */
+/*global Bursa, Ember, $, console */
 /**
  * Agrega soporte para filtrado a un controlador
  *
@@ -44,7 +44,6 @@
       return params;
     },
     
-
     actions: {
       doSearch: function(searchValue) {
         

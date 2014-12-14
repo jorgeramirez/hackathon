@@ -53,6 +53,9 @@ Bursa.Router.map(function() {
     this.route('producto');
     this.route('dato');
   });
+  
+  this.resource("llamados", function() {
+  });
 
   this.route("noEncontrado", { path: "*path"});
 });

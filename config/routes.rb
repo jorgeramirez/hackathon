@@ -36,6 +36,7 @@ Bursa::Application.routes.draw do
   resources :roles, :controller => "ember", :action => 'start'
 
   get "/sessions/new" => "ember#start"
+  get "/llamados" => "ember#start"
   get "/sessions/newuser" => "ember#start"
   get "/proveedores/producto" => "ember#start"
   get "ember/start"
