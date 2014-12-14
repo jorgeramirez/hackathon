@@ -1,5 +1,7 @@
 Bursa::Application.routes.draw do
 
+  resources :pacs
+
   resources :items
 
   resources :categorias

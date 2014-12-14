@@ -1,0 +1,2 @@
+class PacsController < ApplicationController
+end
