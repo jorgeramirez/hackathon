@@ -1,5 +1,7 @@
 Bursa::Application.routes.draw do
 
+  resources :items
+
   resources :categorias
 
   resources :tipo_operaciones
