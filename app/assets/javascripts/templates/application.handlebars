@@ -55,20 +55,16 @@
                    </ul>
                </li>
 
-                <li>{{#link-to "convocatorias"}}<i class="fa fa-gear"></i><span>Mis Convocatorias</span>{{/link-to}}</li>
-
-            
-               <li class="sub-menu  dcjq-parent-li">
+               
+                 <li class="sub-menu  dcjq-parent-li">
                    <a href="javascript:;"  class="dcjq-parent" >
-                         <i class="fa fa-signal"></i>
-                         <span>Estadísticas</span>
+                         <i class="fa fa-gear"></i>
+                         <span>Convocatorias</span>
                    </a>
                    <ul class="sub" style="overflow: hidden; display: block;">
-                     <li>{{#link-to "convocatorias"}}<span>Precios</span>{{/link-to}}</li>
-                     <li>{{#link-to "convocatorias"}}<span>Precios</span>{{/link-to}}</li>
-                     <li>{{#link-to "convocatorias"}}<span>Precios</span>{{/link-to}}</li>
-                     <li>{{#link-to "convocatorias"}}<span>Precios</span>{{/link-to}}</li>
-                   
+                     <li>{{#link-to "convocatorias"}}<span>Mis Convocatorias</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Todas las Convocatorias</span>{{/link-to}}</li>
+                     
                    </ul>
                </li>
 
@@ -85,16 +81,30 @@
                    </ul>
                </li>
 
-              <li>{{#link-to "convocatorias"}}<i class="fa fa-bar-chart-o"></i><span>Informes</span>{{/link-to}}</li>
-                
-                {{#isAuthorized 'FE_menu_configuraciones'}}
-								<li class="sub-menu  dcjq-parent-li">
+                <li class="sub-menu  dcjq-parent-li">
                    <a href="javascript:;"  class="dcjq-parent" >
-                         <i class="fa fa-gear"></i>
-                         <span>Configuraciones</span>
+                         <i class="fa fa-signal"></i>
+                         <span>Estadísticas de Precios</span>
                    </a>
+                   <ul class="sub" style="overflow: hidden; display: block;">
+                     <li>{{#link-to "convocatorias"}}<span>Inversiones por categorías</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Fluctuación de precios</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Planificado vs Adjudicado</span>{{/link-to}}</li>
+                   </ul>
                </li>
-               {{/isAuthorized}}
+
+               
+                 <li class="sub-menu  dcjq-parent-li">
+                   <a href="javascript:;"  class="dcjq-parent" >
+                         <i class="fa fa-bar-chart-o"></i>
+                         <span>Informes para Proveedores</span>
+                   </a>
+                   <ul class="sub" style="overflow: hidden; display: block;">
+                     <li>{{#link-to "proveedores.producto"}}<span>Precios anteriores</span>{{/link-to}}</li>
+                     <li>{{#link-to "convocatorias"}}<span>Sugerencia de precios</span>{{/link-to}}</li>
+                      <li>{{#link-to "convocatorias"}}<span>Oferentes Aliados</span>{{/link-to}}</li>
+                   </ul>
+               </li>
 								
             </ul>
             <!-- sidebar menu end-->
