@@ -1,5 +1,19 @@
 Bursa::Application.routes.draw do
 
+  resources :item_lote_adjudicados
+
+  resources :adjudicacion_lotes
+
+  resources :adjudicacion_proveedors
+
+  resources :adjudicaciones
+
+  resources :invitados
+
+  resources :convocatoria_lote_items
+
+  resources :convocatoria_lotes
+
   resources :pacs
 
   resources :items

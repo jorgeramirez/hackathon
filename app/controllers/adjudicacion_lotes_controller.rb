@@ -1,0 +1,2 @@
+class AdjudicacionLotesController < ApplicationController
+end

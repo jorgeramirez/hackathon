@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  adjudicacion_lote_id: 
+  id_contrato: MyString
+  id_lote: MyString
+  producto_codigo: MyString
+  producto_descripcion: MyString
+  descripcion: MyString
+  cantidad: 1
+  precio_unitario: 1
+  item_id: 
+
+two:
+  adjudicacion_lote_id: 
+  id_contrato: MyString
+  id_lote: MyString
+  producto_codigo: MyString
+  producto_descripcion: MyString
+  descripcion: MyString
+  cantidad: 1
+  precio_unitario: 1
+  item_id: 

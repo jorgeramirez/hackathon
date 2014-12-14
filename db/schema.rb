@@ -11,10 +11,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141214142313) do
+ActiveRecord::Schema.define(version: 20141214153138) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "adjudicacion_lotes", force: true do |t|
+    t.integer  "adjudicaciones_id"
+    t.string   "id_contrato"
+    t.string   "id_lote"
+    t.string   "numero_lote"
+    t.string   "nombre_lote"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "adjudicacion_lotes", ["adjudicaciones_id"], name: "index_adjudicacion_lotes_on_adjudicaciones_id", using: :btree
+
+  create_table "adjudicacion_proveedors", force: true do |t|
+    t.integer  "adjudicaciones_id"
+    t.integer  "monto_adjudicado"
+    t.string   "moneda"
+    t.string   "id_contrato"
+    t.string   "codigo_contratacion"
+    t.string   "razon_social"
+    t.string   "ruc"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "adjudicacion_proveedors", ["adjudicaciones_id"], name: "index_adjudicacion_proveedors_on_adjudicaciones_id", using: :btree
+
+  create_table "adjudicaciones", force: true do |t|
+    t.integer  "pac_id"
+    t.integer  "convocatoria_id"
+    t.integer  "categoria_id"
+    t.integer  "tipo_operacion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "adjudicaciones", ["categoria_id"], name: "index_adjudicaciones_on_categoria_id", using: :btree
+  add_index "adjudicaciones", ["convocatoria_id"], name: "index_adjudicaciones_on_convocatoria_id", using: :btree
+  add_index "adjudicaciones", ["pac_id"], name: "index_adjudicaciones_on_pac_id", using: :btree
+  add_index "adjudicaciones", ["tipo_operacion_id"], name: "index_adjudicaciones_on_tipo_operacion_id", using: :btree
 
   create_table "api_keys", force: true do |t|
     t.integer  "usuario_id"
@@ -78,6 +118,61 @@ ActiveRecord::Schema.define(version: 20141214142313) do
 
   add_index "convocatoria", ["categoria_id"], name: "index_convocatoria_on_categoria_id", using: :btree
   add_index "convocatoria", ["tipo_operacion_id"], name: "index_convocatoria_on_tipo_operacion_id", using: :btree
+
+  create_table "convocatoria_lote_items", force: true do |t|
+    t.integer  "convocatoria_lote_id"
+    t.string   "unidad_medida"
+    t.string   "numero"
+    t.string   "producto_codigo"
+    t.string   "producto_descripcion"
+    t.integer  "item_id"
+    t.string   "descripcion"
+    t.integer  "cantidad"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "convocatoria_lote_items", ["convocatoria_lote_id"], name: "index_convocatoria_lote_items_on_convocatoria_lote_id", using: :btree
+  add_index "convocatoria_lote_items", ["item_id"], name: "index_convocatoria_lote_items_on_item_id", using: :btree
+
+  create_table "convocatoria_lotes", force: true do |t|
+    t.integer  "convocatoria_id"
+    t.string   "nro"
+    t.string   "nombre_lote"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "convocatoria_lotes", ["convocatoria_id"], name: "index_convocatoria_lotes_on_convocatoria_id", using: :btree
+
+  create_table "invitados", force: true do |t|
+    t.integer  "convocatoria_id"
+    t.string   "razon_social"
+    t.string   "ruc"
+    t.string   "telefono"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "invitados", ["convocatoria_id"], name: "index_invitados_on_convocatoria_id", using: :btree
+
+  create_table "item_lote_adjudicados", force: true do |t|
+    t.integer  "adjudicacion_lote_id"
+    t.string   "id_contrato"
+    t.string   "id_lote"
+    t.string   "producto_codigo"
+    t.string   "producto_descripcion"
+    t.string   "descripcion"
+    t.integer  "cantidad"
+    t.integer  "precio_unitario"
+    t.integer  "item_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "item_lote_adjudicados", ["adjudicacion_lote_id"], name: "index_item_lote_adjudicados_on_adjudicacion_lote_id", using: :btree
+  add_index "item_lote_adjudicados", ["item_id"], name: "index_item_lote_adjudicados_on_item_id", using: :btree
 
   create_table "items", force: true do |t|
     t.string   "producto_codigo"
