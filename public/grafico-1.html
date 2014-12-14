@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Grafico 1</title>
+  <link href="/css/grafics.css" media="screen" rel="stylesheet">
+  <link href="/assets/bootstrap.css?body=1" media="screen" rel="stylesheet">
+  <script src="/assets/jquery.js"></script>
+  <script src="/js/tabla-resultados.js"></script>
+  <script src="/js/d3.v3.js"></script>
+  <script src="/js/grafico-1.js"></script>
+  <script src="/js/dimple.v2.0.2.js"></script>
+</head>
+
+<body>
+    <div id="grafico"  class="panel panel-default">
+      <div class="panel-body">
+        <div id="section-to-print" style="height: 100%;">
+          <div id="tabla-resultado">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <a id="download-datos"
+                    class="btn btn-default btn-sm hidden-button-print">CSV</a>
+                <h5 id="titulo">
+                  Datos 1<small
+                    id="datos" class="visible-small-print"></small>
+                </h5>
+              </div>
+              <table class="table table-striped">
+                <thead id="thead">
+                  <tr></tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </div>
+          </div>
+          <div id="tabla-resultado-2">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <a id="download-datos2"
+                    class="btn btn-default btn-sm hidden-button-print">CSV</a>
+                <h5 id="titulo">
+                  Datos 2<small
+                    id="datos2" class="visible-small-print"></small>
+                </h5>
+              </div>
+              <table class="table table-striped">
+                <thead id="thead">
+                  <tr></tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="chart" style="height: 550px; position: relative;">
+              <div id="col1">&#160;</div>
+              <div id="barChart"></div>
+              <div id="detalleChart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
