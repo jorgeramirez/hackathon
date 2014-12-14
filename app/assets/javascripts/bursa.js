@@ -11,5 +11,9 @@
 //= require_tree ./routes
 //= require ./graficos/morris-0.4.3.min.js
 //= require ./graficos/morris-conf.js
+//= require ./graficos/d3.v3.js
+//= require ./graficos/tabla-resultados.js
+//= require ./graficos/grafico-1.js
+
 
 

@@ -1,0 +1,173 @@
+#pieChart {    
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:400px;
+  height: 400px; 
+}
+
+#detalleChart {    
+  position:absolute;
+  top:10px;
+  /*left:410px;*/
+  left:460px;
+  height: 150px;
+}
+
+#barChart {
+  position:absolute;
+  top:160px;
+  /*left:410px;*/
+  left:460px;
+  height: 250px;
+}
+
+.slice {
+   font-size: 12pt;
+   /*font-family: Verdana;*/
+   fill: white; //svg specific - instead of color
+   font-weight: bold; 
+      } 
+
+/*for line chart*/
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges; //The shape-rendering property is an SVG attribute, used here to make sure our axis and its tick mark lines are pixel-perfect. 
+}
+
+.line {
+  fill: none;
+  /*stroke: steelblue;*/
+  stroke-width: 3px;
+}
+
+.dot {
+  /*fill: white;*/
+  /*stroke: steelblue;*/
+  stroke-width: 1.5px;
+  }
+        
+
+.axis text {
+    /*font-family: Verdana;*/
+    font-size: 11px;
+}
+
+.title {
+  /*font-family: Verdana;*/
+    font-size: 12px;    
+}
+
+.title-center {
+  /*font-family: Verdana;*/
+    font-size: 14px;    
+}
+
+.title-barchart {
+  /*font-family: Verdana;*/
+    font-size: 13px;    
+}
+
+
+
+
+.xAxis {
+    /*font-family: verdana;*/
+    font-size: 11px;
+    fill: black;
+}  
+
+.yAxis {
+    /*font-family: verdana;*/
+    font-size: 11px;
+    fill: black;
+}
+
+.barChartClass .xAxis {
+    /*font-family: verdana;*/
+    font-size: 10px;
+    fill: black;
+}
+  
+.chart table {
+  border-collapse:collapse;
+  border: 0px;  
+  /*font-family: Verdana; */
+  color: #5C5558;
+  font-size: 12px;
+  text-align: right;      
+}
+
+.chart td {
+  padding-left: 10px;   
+}
+
+#detalleChartTitle1 {
+  font-family: Verdana;
+  font-size  : 14px;
+  fill       : lightgrey;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+#detalleChartTitle2 {
+  /*font-family: Verdana;*/
+  font-size  : 72px;
+  fill       : grey;
+  /*text-anchor: middle;*/
+  font-weight: bold;
+  /*font-style: italic;*/
+}
+
+#detalleChartTitle2small {
+  font-size  : 14px;
+  fill       : rgb(173, 173, 173);
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Areas de impresión */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .visible-small-print {
+      display: inline !important;
+      font-size: 75% !important;
+    }
+    
+    .hidden-button-print {
+      display: none !important;
+    }
+  
+  #section-to-print, #section-to-print * {
+    visibility: visible;
+  }
+    
+  #section-to-print {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .table-striped > tbody > tr:nth-child(odd) > td,
+  .table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: #f9f9f9 !important;
+    -webkit-print-color-adjust: exact; 
+  }
+  
+  .panel-default > .panel-heading {
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
+    border-color: #ddd !important;
+    -webkit-print-color-adjust: exact; 
+  }
+  
+}
