@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141214053609) do
+ActiveRecord::Schema.define(version: 20141214142313) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,17 +37,47 @@ ActiveRecord::Schema.define(version: 20141214053609) do
   end
 
   create_table "convocatoria", force: true do |t|
-    t.string   "codigo"
-    t.string   "nombre_licitacion"
-    t.string   "convocante"
-    t.string   "tipo_contratacion"
+    t.string   "estado"
+    t.integer  "categoria_id"
+    t.integer  "tipo_operacion_id"
+    t.string   "tipo_garantia_oferta"
     t.string   "sistema_adjudicacion"
     t.string   "forma_pago"
-    t.string   "apertura_competencia"
-    t.string   "estado"
+    t.string   "moneda"
+    t.string   "planificacion_id"
+    t.string   "id_llamado"
+    t.string   "nombre_licitacion"
+    t.string   "convocante"
+    t.string   "metodo_seleccion"
+    t.string   "fecha_publicacion"
+    t.string   "fuente_financiamiento"
+    t.string   "plazo_entrega_adquisición"
+    t.string   "lugar_entrega_adquisicion"
+    t.string   "vigencia_contrato"
+    t.string   "nombre_contacto"
+    t.string   "cargo_contacto"
+    t.string   "telefono_contacto"
+    t.string   "email_contacto"
+    t.string   "fecha_junta_aclaracion"
+    t.string   "lugar_junta_aclaracion"
+    t.string   "lugar_consulta"
+    t.string   "fecha_tope_consulta"
+    t.string   "fecha_tope_respuesta"
+    t.string   "lugar_entrega_oferta"
+    t.string   "fecha_entrega_oferta"
+    t.string   "lugar_apertura_oferta"
+    t.string   "fecha_apertura_oferta"
+    t.string   "fecha_inicio_propuesta"
+    t.string   "fecha_cierre_propuesta"
+    t.string   "fecha_etapa_competitiva"
+    t.string   "observaciones"
+    t.string   "restricciones"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "convocatoria", ["categoria_id"], name: "index_convocatoria_on_categoria_id", using: :btree
+  add_index "convocatoria", ["tipo_operacion_id"], name: "index_convocatoria_on_tipo_operacion_id", using: :btree
 
   create_table "items", force: true do |t|
     t.string   "producto_codigo"
@@ -58,6 +88,25 @@ ActiveRecord::Schema.define(version: 20141214053609) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "pacs", force: true do |t|
+    t.string   "id_pac"
+    t.integer  "categoria_id"
+    t.string   "id_llamado"
+    t.string   "anio"
+    t.integer  "tipo_operacion_id"
+    t.string   "moneda"
+    t.string   "nombre_licitacion"
+    t.string   "convicante"
+    t.string   "fecha_estimada"
+    t.string   "fecha_publicacion"
+    t.string   "estado_actual"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pacs", ["categoria_id"], name: "index_pacs_on_categoria_id", using: :btree
+  add_index "pacs", ["tipo_operacion_id"], name: "index_pacs_on_tipo_operacion_id", using: :btree
 
   create_table "recursos", force: true do |t|
     t.string   "codigo"
