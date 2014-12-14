@@ -11,3 +11,5 @@ ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "usuarios"
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "recursos")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "roles")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "convocatorias")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "tipo_operaciones")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "categorias")

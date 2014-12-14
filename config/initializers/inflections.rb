@@ -30,5 +30,7 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.irregular 'referencia', 'referencias'
   inflect.irregular 'persona', 'personas'
   inflect.irregular 'solicitud','solicitudes'
+  inflect.irregular 'tipo_operacion','tipo_operaciones'
+  inflect.irregular 'categoria','categorias'
 
 end

@@ -1,0 +1,2 @@
+class TipoOperacionesController < ApplicationController
+end

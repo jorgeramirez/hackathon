@@ -1,5 +1,9 @@
 Bursa::Application.routes.draw do
 
+  resources :categorias
+
+  resources :tipo_operaciones
+
   resources :convocatoria
 
   resources :personas
