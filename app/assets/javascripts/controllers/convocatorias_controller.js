@@ -48,8 +48,7 @@ Bursa.ConvocatoriaVerController = Ember.ObjectController.extend({
 
   actions: {
     
-    cancel: function() {
-			$('body').removeClass('modal-open');
+    volver: function() {
       this.transitionToRoute('convocatorias');
     }
   }
