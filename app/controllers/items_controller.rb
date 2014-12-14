@@ -1,7 +1,8 @@
 class API::V1::ItemsController < ApplicationController
   respond_to :json
  
-  has_scope :by_descripcion
+  has_scope :by_item
+  has_scope :by_convocante
 
   PER_PAGE_RECORDS = 15
 

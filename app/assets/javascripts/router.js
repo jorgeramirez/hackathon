@@ -51,7 +51,7 @@ Bursa.Router.map(function() {
 
   this.resource("proveedores", function() {
     this.route('producto');
-    this.route('dato');
+    this.route('estado');
   });
   
   this.resource("llamados", function() {
