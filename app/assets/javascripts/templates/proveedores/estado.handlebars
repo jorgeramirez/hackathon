@@ -24,14 +24,14 @@
                 {{/if}}
             </div>
             <div class="col-lg-6" {{bind-attr class="errors.roles:has-error errors.roles:has-feedback"}}>
-                <label class="form-label"  for="items">Producto</label>
+                <label class="form-label"  for="items">Convocantes</label>
                 {{view Bursa.views.TagWidgetView 
                        service='items'
                        modelType='item'
                        modelID='id'
                        itemText='producto_descripcion' 
                        itemValue='id'
-                       queryScope='by_item'
+                       queryScope='by_convocante'
                        session=session
                        datasource=items
                        jsonRoot='items'}}
