@@ -9,6 +9,7 @@ Bursa::Application.routes.draw do
   resources :convocatoria
 
   resources :personas
+  resources :items
   #match '*path', :controller => 'application', :action => 'handle_options_request', via: :options
   resources :usuarios, :controller => "ember", :action => 'start'
   resources :convocatorias, :controller => "ember", :action => 'start'
@@ -37,6 +38,7 @@ Bursa::Application.routes.draw do
       resources :api_keys
       resources :roles
       resources :roles_usuarios
+      resources :items
       post 'session' => 'session#create'
     end
   end

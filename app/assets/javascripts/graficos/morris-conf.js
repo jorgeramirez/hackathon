@@ -24,12 +24,16 @@ var graficar = function (id) {
       Morris.Bar({
         element: 'hero-bar',
         data: [
-          {device: 'Florence', geekbench: 1571},
-          {device: 'Martinucci', geekbench: 655},
-          {device: 'Lugaro', geekbench: 275},
-          {device: 'iPhone 4', geekbench: 380},
-          {device: 'iPhone 4S', geekbench: 137 },
-          {device: 'iPhone 5', geekbench: 136}
+          {device: 'SILDAY DTM S.R.L', geekbench: 1571},
+          {device: 'TECTERM', geekbench: 1255},
+          {device: 'DICOPAR SRL', geekbench: 975},
+          {device: 'SILVESTRI MUEBLES S.R.L', geekbench: 880},
+          {device: 'QUALITY DESIGN S.R.L.', geekbench: 737 },
+          {device: 'MELCOR S.A', geekbench: 336},
+          {device: 'INFOGA S.R.L', geekbench: 337 },
+          {device: 'ASTRI S.A.', geekbench: 240 },
+          {device: 'ARQUITECTURA Y DISEÑO SA', geekbench: 155 },
+          {device: 'NUÑEZ Y NUÑEZ  MUEBLES SRL', geekbench: 133 }
         ],
         xkey: 'device',
         ykeys: ['geekbench'],

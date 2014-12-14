@@ -5,17 +5,42 @@
   <body>
 
 <div class="row mt">
+  <h3><i class="fa fa-angle-right"></i> Ranking de Proveedores por Producto</h3>
   <div class="col-lg-12">
     <div class="form-panel">
       <div class="form-horizontal">
         <form class="style-form" role="form">
           <div class="form-group">
-            <div class="col-lg-4">
-              <label class="form-label"  for="nombre">Nombre de la Empresa/Proveedor</label>
-              {{focus-input  type="text" class="form-control" placeholder="Nombre" autofocus="autofocus"}}
-              
+          
+            <div class="col-lg-3" {{bind-attr class="errors.iva:has-error errors.iva:has-feedback"}}>
+            
+                 <label class="form-label" for="iva">Año</label>
+                  {{view Ember.Select content=anhos 
+                  selection=anho
+                  classNames="form-control"}}
+                
+                {{#if errors.iva}}
+                   <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                {{/if}}
             </div>
-             <div class="col-lg-4">
+            <div class="col-lg-6" {{bind-attr class="errors.roles:has-error errors.roles:has-feedback"}}>
+                <label class="form-label"  for="items">Producto</label>
+                {{view Bursa.views.TagWidgetView 
+                       service='items'
+                       modelType='item'
+                       modelID='id'
+                       itemText='producto_descripcion' 
+                       itemValue='id'
+                       queryScope='by_descripcion'
+                       session=session
+                       datasource=items
+                       jsonRoot='items'}}
+                {{#if errors.roles}}
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                {{/if}}
+              </div>
+             <div class="col-lg-3" style="padding-top: 22px;">
+
                 <button type= "button" onclick="graficar('grafico1');" class="btn btn-theme">Generar</button>
               </div>
           </div>
@@ -27,14 +52,13 @@
 
  
  <div id="grafico1" style="display:none;" >
-  <h3><i class="fa fa-angle-right"></i> Ranking de Proveedores por Producto</h3>
       <!-- page start-->
       <div id="morris">
           <div class="row mt">
               
               <div class="col-lg-12">
                   <div class="content-panel">
-                      <h4><i class="fa fa-angle-right"></i> Chart Example 2</h4>
+                      <h4><i class="fa fa-angle-right"></i>Lustra muebles</h4>
                       <div class="panel-body">
                           <div id="hero-bar" class="graph"></div>
                       </div>
