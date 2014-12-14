@@ -49,5 +49,10 @@ Bursa.Router.map(function() {
     this.route('newuser');
   });
 
+  this.resource("proveedores", function() {
+    this.route('producto');
+    this.route('dato');
+  });
+
   this.route("noEncontrado", { path: "*path"});
 });
