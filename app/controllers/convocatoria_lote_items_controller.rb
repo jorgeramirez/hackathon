@@ -1,0 +1,2 @@
+class ConvocatoriaLoteItemsController < ApplicationController
+end

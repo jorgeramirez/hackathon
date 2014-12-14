@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_pac: MyString
+  categoria_id: 
+  id_llamado: MyString
+  anio: MyString
+  tipo_operacion_id: 
+  moneda: MyString
+  nombre_licitacion: MyString
+  convicante: MyString
+  fecha_estimada: MyString
+  fecha_publicacion: MyString
+  estado_actual: MyString
+
+two:
+  id_pac: MyString
+  categoria_id: 
+  id_llamado: MyString
+  anio: MyString
+  tipo_operacion_id: 
+  moneda: MyString
+  nombre_licitacion: MyString
+  convicante: MyString
+  fecha_estimada: MyString
+  fecha_publicacion: MyString
+  estado_actual: MyString

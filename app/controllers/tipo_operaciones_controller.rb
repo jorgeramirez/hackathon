@@ -1,2 +1,0 @@
-class TipoOperacionesController < ApplicationController
-end
