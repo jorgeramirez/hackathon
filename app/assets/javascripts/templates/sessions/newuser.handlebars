@@ -69,6 +69,24 @@
                   </div>
                 </div>
                 
+                <div class="form-group">
+                  <div class="col-lg-12" {{bind-attr class="errors.roles:has-error errors.roles:has-feedback"}}>
+                  <label class="form-label"  for="items">Productos de Interes</label>
+                  {{view Bursa.views.TagWidgetView 
+                         service='items'
+                         modelType='item'
+                         modelID='id'
+                         itemText='producto_descripcion' 
+                         itemValue='id'
+                         queryScope='by_item'
+                         session=session
+                         datasource=items
+                         jsonRoot='items'}}
+                  {{#if errors.roles}}
+                  <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                  {{/if}}
+                </div>
+              </div>
 
                 <div class="form-group">
                   <div class="col-lg-12" >  
@@ -163,7 +181,7 @@
                           <td style="padding-left:10px"><label for="pagado">Muebles y Enseres</label></td>
                         </tr>
 
-                        <tr>
+                        {{!-- <tr>
                           <td> {{input name="pagado" type="checkbox"  class="checkbox"}}  </td>
                           <td style="padding-left:10px"><label for="pagado">Equipos, accesorios y programas computacionales</label></td>
                           <td style="padding-left:30px"></td>
@@ -171,7 +189,7 @@
                           <td style="padding-left:10px"><label for="pagado">Equipos Militares y de Seguridad. Servicio de Seguridad y Vigilancia</label></td>
                           
                         </tr>
-
+ --}}
 
                       </tbody>
                     </table> 

@@ -6,6 +6,7 @@
   precio_minimo: 780000
   precio_maximo: 1500000
   precio_promedio: 950000
+  esconvocante: false
 
 52141601-002:
   producto_codigo: 52141601-002
@@ -13,7 +14,7 @@
   precio_minimo: 500000
   precio_maximo: 750000
   precio_promedio: 625000
-
+  esconvocante: false
 
 47121805-001:
   producto_codigo: 47121805-001
@@ -21,6 +22,7 @@
   precio_minimo: 500000
   precio_maximo: 750000
   precio_promedio: 625000
+  esconvocante: false
 
 24111503-002:
   producto_codigo: 24111503-002
@@ -28,6 +30,7 @@
   precio_minimo: 540
   precio_maximo: 700
   precio_promedio: 620
+  esconvocante: false
 
 47131803-002:
   producto_codigo: 47131803-002
@@ -35,6 +38,7 @@
   precio_minimo: 12500
   precio_maximo: 16000
   precio_promedio: 13200
+  esconvocante: false
 
 47131830-001:
   producto_codigo: 47131830-001
@@ -42,13 +46,15 @@
   precio_minimo: 12500
   precio_maximo: 28000
   precio_promedio: 21000
-
+  esconvocante: false
+  
 47131829-002:
   producto_codigo: 47131829-002
   producto_descripcion: Desinfectante para baño
   precio_minimo: 10500
   precio_maximo: 13200
   precio_promedio: 12000
+  esconvocante: false
 
 47131816-003:
   producto_codigo: 47131816-003
@@ -56,6 +62,7 @@
   precio_minimo: 5700
   precio_maximo: 8000
   precio_promedio: 6500
+  esconvocante: false
 
 53131608-001:
   producto_codigo: 53131608-001
@@ -63,6 +70,7 @@
   precio_minimo: 850
   precio_maximo: 1200
   precio_promedio: 950
+  esconvocante: false
 
 47131824-001:
   producto_codigo: 47131824-001
@@ -70,6 +78,7 @@
   precio_minimo: 12500
   precio_maximo: 19000
   precio_promedio: 14000
+  esconvocante: false
 
 47131816-001:
   producto_codigo: 47131816-001
@@ -77,6 +86,7 @@
   precio_minimo: 8000
   precio_maximo: 16000
   precio_promedio: 12000
+  esconvocante: false
 
 47131615-001:
   producto_codigo: 47131615-001
@@ -84,3 +94,69 @@
   precio_minimo: 12500
   precio_maximo: 18000
   precio_promedio: 13500
+  esconvocante: false
+
+c47131615-001:
+  producto_codigo: 47131615-001
+  producto_descripcion: MUNICIPALIDAD DE GRAL JOSE M. BRUGUEZ
+  precio_minimo: 12500
+  precio_maximo: 18000
+  precio_promedio: 13500
+  esconvocante: true
+
+c47131615-002:
+  producto_codigo: 47131615-001
+  producto_descripcion: MINISTERIO DE SALUD PUBLICA Y BIENESTAR SOCIAL
+  precio_minimo: 12500
+  precio_maximo: 18000
+  precio_promedio: 13500
+  esconvocante: true
+
+c47131615-003:
+  producto_codigo: 47131615-001
+  producto_descripcion: INSTITUTO DE PREVISIÓN SOCIAL
+  precio_minimo: 12500
+  precio_maximo: 18000
+  precio_promedio: 13500
+  esconvocante: true
+
+c47131615-004:
+  producto_codigo: 47131615-001
+  producto_descripcion: APOYO AL DESARROLLO DE UN SISTEMA DE ADQ. PUBLICAS
+  precio_minimo: 12500
+  precio_maximo: 18000
+  precio_promedio: 13500
+  esconvocante: true
+
+c47131615-005:
+  producto_codigo: 47131615-001
+  producto_descripcion: UNIVERSIDAD NACIONAL DE ASUNCIÓN
+  precio_minimo: 12500
+  precio_maximo: 18000
+  precio_promedio: 13500
+  esconvocante: true
+
+c47131615-006:
+  producto_codigo: 47131615-001
+  producto_descripcion: UNIVERSIDAD NACIONAL DE CONCEPCIÓN
+  precio_minimo: 12500
+  precio_maximo: 18000
+  precio_promedio: 13500
+  esconvocante: true
+
+
+c47131615-007:
+  producto_codigo: 47131615-001
+  producto_descripcion: GOBIERNO DEPARTAMENTAL DE PRESIDENTE HAYES 
+  precio_minimo: 12500
+  precio_maximo: 18000
+  precio_promedio: 13500
+  esconvocante: true
+
+c47131615-007:
+  producto_codigo: 47131615-001
+  producto_descripcion: CORTE SUPREMA DE JUSTICIA
+  precio_minimo: 12500
+  precio_maximo: 18000
+  precio_promedio: 13500
+  esconvocante: true
