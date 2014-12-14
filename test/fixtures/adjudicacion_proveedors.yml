@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  adjudicacion_id: 
+  monto_adjudicado: 1
+  moneda: MyString
+  id_contrato: MyString
+  codigo_contratacion: MyString
+  razon_social: MyString
+  ruc: MyString
+
+two:
+  adjudicacion_id: 
+  monto_adjudicado: 1
+  moneda: MyString
+  id_contrato: MyString
+  codigo_contratacion: MyString
+  razon_social: MyString
+  ruc: MyString
